@@ -1,7 +1,7 @@
 # Tetris
 Template to build side projects
 ## Goals
-- [ ] Spring/Kotlin backend
+- [X] Spring/Kotlin backend
 - [ ] Postgres database
 - [ ] React/Typescript frontend
 - [ ] Use grade to build and test
@@ -9,3 +9,11 @@ Template to build side projects
 - [ ] Deploy to Heroku
 - [ ] Gitci depoly on commit to `release`
 - [ ] Acceptance tests with `cypress`
+
+## Docker Setup Dev
+1. Install Docker and Docker Compose
+2. Create Docker DB run from app home
+
+```
+ docker-compose up -d
+```
