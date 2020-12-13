@@ -2,10 +2,10 @@
 Template to build side projects
 ## Goals
 - [X] Spring/Kotlin backend
-- [ ] Postgres database
+- [X] Postgres database
 - [ ] React/Typescript frontend
-- [ ] Use grade to build and test
-- [ ] Gitci build and test
+- [X] Use grade to build and test
+- [X] Gitci build and test
 - [ ] Deploy to Heroku
 - [ ] Gitci depoly on commit to `release`
 - [ ] Acceptance tests with `cypress`
