@@ -6,6 +6,6 @@ pluginManagement {
 
 rootProject.name = "tetris"
 
-//include("frontend")
+include("frontend")
 include("backend")
 //include("acceptance")

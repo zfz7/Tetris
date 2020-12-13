@@ -3,7 +3,7 @@ Template to build side projects
 ## Goals
 - [X] Spring/Kotlin backend
 - [X] Postgres database
-- [ ] React/Typescript frontend
+- [X] React/Typescript frontend
 - [X] Use grade to build and test
 - [X] Gitci build and test
 - [ ] Deploy to Heroku
