@@ -11,6 +11,7 @@ plugins {
     kotlin("jvm")
     kotlin("plugin.spring")
     kotlin("plugin.jpa")
+    id("com.gorylenko.gradle-git-properties") version "2.2.4"
 }
 
 group = "org.zfz7"
@@ -28,10 +29,19 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
+    testImplementation("io.mockk:mockk:1.10.3")
+
     runtimeOnly("org.postgresql:postgresql")
 }
+
+gitProperties {
+    keys = arrayOf(
+        "git.commit.id"
+    ).toMutableList()
+} // adds git commit ID to the actuator
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {

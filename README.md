@@ -6,6 +6,7 @@ Template to build side projects
 - [X] React/Typescript frontend
 - [X] Use grade to build and test
 - [X] Gitci build and test
+- [X] Basic hello world functionality
 - [ ] Deploy to Heroku
 - [ ] Gitci depoly on commit to `release`
 - [ ] Acceptance tests with `cypress`

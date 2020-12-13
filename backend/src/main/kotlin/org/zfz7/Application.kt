@@ -1,4 +1,4 @@
-package org.zfz7.backend
+package org.zfz7
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
