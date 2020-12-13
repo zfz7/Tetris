@@ -9,7 +9,7 @@ jobs:
   container-job:
     runs-on: ubuntu-latest
     services:
-      postgres_db:
+      tetris_db:
         image: postgres
         env:
           POSTGRES_USER: tetris
