@@ -10,7 +10,9 @@ Template to build side projects
 - [X] Deploy to Heroku
 - [X] Gitci depoly on commit to `release`
 - [X] Flyway migrations
-- [ ] Acceptance tests with `cypress`
+- [X] Acceptance tests with `cypress`
+- [ ] Code scan using CodeQL which block deployment
+- [ ] 
 
 ## Docker Setup Dev
 1. Install Docker and Docker Compose
