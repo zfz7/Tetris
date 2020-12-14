@@ -22,6 +22,6 @@ describe('HelloWorld', () => {
     await act(async () => {
       await getHelloWorldMock
     })
-    expect(container.innerHTML).toContain("Hello World: Hi")
+    expect(container.innerHTML).toContain("Hello Christy: Hi")
   })
 })

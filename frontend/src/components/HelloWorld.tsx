@@ -9,6 +9,6 @@ export const HelloWorld: React.FC = () => {
   }, [])
 
   return (
-    <div>Hello World: {helloWorld.message}</div>
+    <div>Hello Christy: {helloWorld.message}</div>
   )
 }
