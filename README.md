@@ -7,8 +7,9 @@ Template to build side projects
 - [X] Use grade to build and test
 - [X] Gitci build and test
 - [X] Basic hello world functionality
-- [ ] Deploy to Heroku
-- [ ] Gitci depoly on commit to `release`
+- [X] Deploy to Heroku
+- [X] Gitci depoly on commit to `release`
+- [X] Flyway migrations
 - [ ] Acceptance tests with `cypress`
 
 ## Docker Setup Dev

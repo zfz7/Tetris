@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/tetris}
+    username: ${DATABASE_USERNAME:tetris}
+    password: ${DATABASE_PASSWORD:tetris}
+  jpa:
+    hibernate:
+      ddl-auto: validate
