@@ -27,14 +27,3 @@ jobs:
           java-version: 11
       - name: Run tests
         run: ./gradlew test
-
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.6.8
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "tetris-demo-gains"
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          branch: "main"

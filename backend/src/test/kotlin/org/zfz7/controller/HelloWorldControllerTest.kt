@@ -33,7 +33,7 @@ class HelloWorldControllerTest {
 
   @Test
   @DisplayName("Get Hello World Message")
-  fun `Should retrun correct hello world message`() {
+  fun `Should return correct hello world message`() {
     val now = Instant.now()
     mockkStatic(Instant::class)
     every { Instant.now() } returns now
