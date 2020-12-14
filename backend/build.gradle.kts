@@ -70,6 +70,6 @@ tasks.register<Sync>("copy_frontend_to_backend") {
 }
 
 tasks.withType<Jar> {
-    baseName = "relay-strat"
+    baseName = "tetris"
     archiveName = "$baseName.jar"
 }
