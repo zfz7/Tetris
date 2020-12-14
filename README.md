@@ -11,8 +11,7 @@ Template to build side projects
 - [X] Gitci depoly on commit to `release`
 - [X] Flyway migrations
 - [X] Acceptance tests with `cypress`
-- [ ] Code scan using CodeQL which block deployment
-- [ ] 
+- [X] Code scan using CodeQL which block deployment
 
 ## Docker Setup Dev
 1. Install Docker and Docker Compose
