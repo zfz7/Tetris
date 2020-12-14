@@ -38,6 +38,6 @@ jobs:
           heroku_app_name: "tetris-demo-gains"
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           branch: "release"
-          healthcheck: "https://tetris-demo-gains.herokuapp.com/health"
-          checkstring: "ok"
+          healthcheck: "https://tetris-demo-gains.herokuapp.com/api/health"
+          checkstring: "We seem to be running good"
           delay: 10
