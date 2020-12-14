@@ -37,11 +37,11 @@ dependencies {
     runtimeOnly("org.postgresql:postgresql")
 }
 
-gitProperties {
-    keys = arrayOf(
-        "git.commit.id"
-    ).toMutableList()
-} // adds git commit ID to the actuator
+//gitProperties {
+//    keys = arrayOf(
+//        "git.commit.id"
+//    ).toMutableList()
+//} // adds git commit ID to the actuator
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
