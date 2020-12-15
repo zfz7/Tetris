@@ -71,6 +71,6 @@ tasks.register<Sync>("copy_frontend_to_backend") {
 }
 
 tasks.withType<Jar> {
-    baseName = "tetris"
-    archiveName = "$baseName.jar"
+    archiveBaseName.set("tetris")
+    archiveFileName.set("tetris.jar")
 }
