@@ -1,5 +1,3 @@
-type WaitXHR = Cypress.WaitXHR;
-
 describe('app', () => {
 
   before(() => {
