@@ -1,6 +1,6 @@
 plugins {
-	val kotlinVersion = "1.4.21"
-	val springBootVersion = "2.4.1"
+	val kotlinVersion = "1.4.31"
+	val springBootVersion = "2.4.3"
 	val springDependencyManagementVersion = "1.0.10.RELEASE"
 	val nodePluginVersion = "2.2.4"
 

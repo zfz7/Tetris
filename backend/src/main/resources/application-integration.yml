@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: integration
   datasource:
     url: jdbc:postgresql://localhost:5433/tetris_test
     username: tetris_test
