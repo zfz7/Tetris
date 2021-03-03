@@ -4,7 +4,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 import org.springframework.boot.gradle.tasks.run.BootRun
 
-
 plugins {
     id("org.springframework.boot")
     id("io.spring.dependency-management")
@@ -59,6 +58,8 @@ tasks.withType<BootRun> {
 
 tasks.withType<BootJar> {
     dependsOn("copy_frontend_to_backend")
+    archiveBaseName.set("tetris")
+    archiveFileName.set("tetris.jar")
     doLast {
         println(message = "artifact_path: ${outputs.files.files.single()}")
     }
@@ -68,9 +69,4 @@ tasks.register<Sync>("copy_frontend_to_backend") {
     dependsOn(":frontend:build")
     from(file("${project(":frontend").projectDir}/build"))
     into(file("$buildDir/resources/main/static"))
-}
-
-tasks.withType<Jar> {
-    archiveBaseName.set("tetris")
-    archiveFileName.set("tetris.jar")
 }
