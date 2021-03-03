@@ -1,14 +1,14 @@
-import com.moowork.gradle.node.yarn.YarnTask
-import com.moowork.gradle.node.NodeExtension
+import com.github.gradle.node.NodeExtension
+import com.github.gradle.node.yarn.task.YarnTask
 
 plugins {
   id("com.github.node-gradle.node")
 }
 
 configure<NodeExtension> {
-  version = "12.18.3"
-  yarnVersion = "1.22.4"
-  download = true
+  version.set("12.18.3")
+  yarnVersion.set("1.22.5")
+  download.set(true)
 }
 
 tasks {
@@ -16,20 +16,20 @@ tasks {
     inputs.file(file("$projectDir/yarn.lock"))
     inputs.file(file("$projectDir/package.json"))
     outputs.dir(file("$projectDir/node_modules"))
-    args = listOf("install")
+    args.set(listOf("install"))
   }
 
   register<YarnTask>("test") {
     shouldRunAfter(":backend:test")
     shouldRunAfter(":frontend:test")
     dependsOn(install)
-    args = listOf("test")
+    args.set(listOf("test"))
   }
 
   register<YarnTask>("open") {
     shouldRunAfter(":backend:test")
     shouldRunAfter(":frontend:test")
     dependsOn(install)
-    args = listOf("open")
+    args.set(listOf("open"))
   }
 }
