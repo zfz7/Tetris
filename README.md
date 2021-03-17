@@ -8,7 +8,8 @@ Template to build side projects
 - [X] Gitci build and test
 - [X] Basic hello world functionality
 - [X] Deploy to Heroku
-- [X] Gitci depoly on commit to `release`
+- [X] Gitci depoly on to heroku commit to `release`
+- [] Gitci depoly on to EC2 commit to `release`
 - [X] Flyway migrations
 - [X] Acceptance tests with `cypress`
 - [X] Code scan using CodeQL which block deployment
