@@ -38,3 +38,5 @@ out/
 .vscode/
 
 .envrc
+
+keystore.p12
