@@ -10,7 +10,9 @@ spring:
 security:
   require-ssl: true
 server:
+  port: 8443
   ssl:
+    enabled: true
     key-store: /etc/letsencrypt/live/tetris.zfz7.org/keystore.p12
     key-store-password: tetris
     keyStoreType: PKCS12
