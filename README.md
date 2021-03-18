@@ -29,9 +29,9 @@ Will run tetris.jar on local machine and DB inside docker
 2. Postgress database `heroku-postgresql`
 
 ## EC2 Setup
-1. Install Docker, Docker-Compose and openJDK
+1. Install Docker, Docker-Compose, openJDK and yarn
 2. Build Jar `./gradlew clean assemble`
 3. Build tetris docker image `docker build . -t tetris`
-4. Start all conatiners `docker-compose -f docker-compose.prod.yml up -d`
+4. Start all containers `docker-compose -f docker-compose.prod.yml up -d`
    * database is not exposed to localhost
    * exposes app on port 80
