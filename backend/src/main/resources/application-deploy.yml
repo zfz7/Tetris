@@ -11,7 +11,7 @@ security:
   require-ssl: true
 server:
   ssl:
-    key-store: /etc/letsencrypt/live/demo.zfz7.org/keystore.p12
+    key-store: /etc/letsencrypt/live/tetris.zfz7.org/keystore.p12
     key-store-password: tetris
     keyStoreType: PKCS12
     keyAlias: tomcat
