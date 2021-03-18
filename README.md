@@ -31,13 +31,19 @@ Will run tetris.jar on local machine and DB inside docker
 
 ## EC2 Setup
 1. Install Docker, Docker-Compose, openJDK, yarn and certbot
-   * If on Ubuntu 20 run `sudo ./setupEC2.sh`
-2. Install certs run `sudo certbot certonly --standalone`
-2. Create keystore.p12  `openssl pkcs12 -export -in fullchain.pem -inkey privkey.pem -out keystore.p12 -name tomcat -CAfile chain.pem -caname root`
+   * If on Ubuntu 20 run from project root: `./setupEC2.sh`
+2. Install certs
+   * run `certbot certonly --standalone`
+2. Create keystore.p12, 
+   * run from letscrypt folder: `openssl pkcs12 -export -in fullchain.pem -inkey privkey.pem -out keystore.p12 -name tomcat -CAfile chain.pem -caname root`
    * Use password `tetris`
-3. Copy certs home folder ` cp /etc/letsencrypt/live/tetris.zfz7.org/keystore.p12 .`
-3. Build Jar `./gradlew clean assemble`
-4. Build tetris docker image `docker build . -t tetris`
-5. Start all containers `docker-compose -f docker-compose.prod.yml up -d`
+3. Copy certs home folder 
+   * run from project root:` cp /etc/letsencrypt/live/tetris.zfz7.org/keystore.p12 .`
+3. Build Jar
+   * run from project root:`./gradlew clean assemble`
+4. Build tetris docker image
+   * run from project root: `docker build . -t tetris`
+5. Start all containers
+   * run from project root: `docker-compose -f docker-compose.prod.yml up -d`
    * database is not exposed to localhost
    * exposes app on port 80 and 443
