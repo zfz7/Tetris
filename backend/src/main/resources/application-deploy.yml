@@ -7,3 +7,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+server:
+  ssl:
+    key-store: /etc/letsencrypt/live/www.example.com/keystore.p12
+    key-store-password: tetris
+    keyStoreType: PKCS12
+    keyAlias: tomcat
