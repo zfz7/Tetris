@@ -18,6 +18,11 @@
     "typescript": "^4.2.2",
     "web-vitals": "^1.1.0"
   },
+  "resolutions": {
+    "ssri": "^8.0.1",
+    "is-svg": "^4.2.2",
+    "y18n": "^4.0.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
